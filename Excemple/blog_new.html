@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/blog_new.css" />
+    <title>Bew Blog</title>
+</head>
+<body>
+<div class="page" id="vm_obj">
+    <div class="title">
+        <div class="left" id="pull_left_btn">
+            <img src="img/fanhui@2x.png"/>
+        </div>
+        <span class="caption">New Blog</span>
+        <div class="right">
+            <img src="img/fasong@2x.png"/>
+        </div>
+    </div>
+    <div class="content_list">
+        <div class="list_title">
+            <span class="left"><img src="img/zuo@2x.png" /></span>
+            <span class="caption">Best Singer</span>
+            <span class="right"><img src="img/zuo@2x.png"/></span>
+        </div>
+        <div class="write_pad">
+            <textarea class="text_area" placeholder="Say some thing" contenteditable="true" rows="4">Meghan Trainor is the best!!!!</textarea>
+            <div class="img_loader_pad">
+                <div class="img_loader">
+                    <img src="img/tianjia@2x.png" />
+                    <input type="file" name="filename"/>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/ajax_file_upload.js"></script>
+<script type="text/javascript" src="js/upload_pic.js"></script>
+<script type="text/javascript" >
+    (function(){
+    //blog_pic_list_width=document.querySelector(".page .title .right img").offsetWidth /2 * 8.2;
+    applyAjaxFileUpload('http://someweb/upload.php',document.querySelector(".img_loader input"),9,vm.chanel.media_list);
+    document.getElementById('pull_left_btn').addEventListener('click',function(){
+        history.back();
+    });
+</script>
+</body>
+</html>

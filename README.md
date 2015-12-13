@@ -1,6 +1,6 @@
 #AjaxFileUpload
 ## Introduction
-Rewrite the most famouse ajax uplad api: jQuery.AjaxFileUpload in pure javascript. You can use this api as a function and without need jquery.js any more.
+Rewrite the most famouse ajax uplad api: jQuery.AjaxFileUpload in [vanilla-js](http://vanilla-js.com)(pure js). You can use this api as a function and without need jQuery.js any more.
 
 ## Main File
 ajax_file_upload.js

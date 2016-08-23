@@ -18,7 +18,7 @@ AjaxFileUpload(clickEl,{
         onComplete: function(filename, response) {} //response is a planed json object 'this' is the input element
     });
 ```
-***IMPORT the input element must have a name property***
+***IMPORTANT: the input element must have a name property***
 ## Usage for cross-domain-upload
 Client:
 ```javascript
